@@ -153,6 +153,7 @@ h2 {
   height: 180px;
 }
 
+
 .card.small {
   height: 120px;
 }
@@ -170,6 +171,9 @@ footer {
 }
 .dark a:hover {
   color: #8b7500;
+}
+.dark.card{
+  background:#26211a;
 }
 
 .policies {
