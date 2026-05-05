@@ -182,7 +182,7 @@ body.dark .info-cards {
 
 .card video {
   width: 100%;
-  height: 80%;
+  height: 55%;
   object-fit: fill;
   border-radius: 10px;
 }
@@ -192,8 +192,9 @@ body.dark .info-cards {
 }
 
 .card p {
+  height: 100%;
   width: auto;
-  max-width: 100%;
+  width: 100%;
   margin: 10px 15px 15px;
   line-height: 1.6;
   text-align: center;
