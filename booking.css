@@ -148,7 +148,7 @@ footer {
 }
 .dark .card {
 	background-color:#1a1712 !important;
-	color:#ece3d9 !important!;
+	color:#ece3d9;
 }
 .dark .navbar ul li a:hover{
 	        color:#8b7500;
