@@ -1,0 +1,143 @@
+body{
+    height: 100vh;
+    overflow: hidden;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family:"Playfair Display";
+    background-color:#f8f3e6;
+    text-align: center;
+}
+
+
+p{
+    margin-top: 3px;
+    color:#d4af37;
+    text-align: center;
+    margin-bottom: 3px;
+    font-weight: bold;
+}
+
+.form-box{
+    background: #4d403a;
+    padding: 40px;
+    padding-bottom: 5px;
+    margin-top:5px;
+    margin-bottom: 5px;
+    width:250px;
+    text-align: center;
+    color:#d4af37;
+    border-radius: 15px;
+    
+}
+
+
+.form-box p{
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+form label{
+    display:block;
+    text-align: left !important;
+    padding-left: 3px;
+    margin-bottom: 3px;
+}
+
+form input{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button{
+    font-family: 'Playfair Display';
+    width: 100%;
+    margin-left:auto;
+    margin-top: 20px;
+    padding: 12px;
+    background-color:#d4af37;
+    border:none;
+    border-radius: 5px;
+    font-weight:bold;
+}
+button:hover{
+    background: #fff;
+}
+
+
+
+
+
+.line {
+    font-family: 'Playfair Display';
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 15px 0;
+    color: #fff; 
+}
+
+.line::before, .line::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #fff; 
+}
+
+.line:not(:empty)::before {
+    margin-right: .5em; 
+}
+
+.line:not(:empty)::after {
+    margin-left: .5em; 
+}
+
+.social-login {
+
+    display:flex;
+    gap:15px;
+    margin-top: 10px;
+}
+
+.social-login p {
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+.social-login button {
+    flex:1;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 3px 0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+    background-color: transparent;
+}
+
+
+button:hover{
+    color: #d4af37;
+}
+
+.another{
+    display: block;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.another a{
+    color:#d4af37;
+    text-decoration: none;
+}
+
+.start{
+    font-size: 12px;
+    color:#d4af37 !important;
+}

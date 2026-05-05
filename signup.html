@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grand Egyptian Museum</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+
+<body>
+
+    <div class="containers">
+            <p>Create an Account </p>
+        <div class="form-box">
+            
+            <form id="signupForm">
+                <label for="name">Full Name</label>
+                <input id="name" type="text" placeholder="Enter You Full Name" required>
+                <label for="email">Your Email</label>
+                <input  type="email" placeholder="Email Address" required id="email">
+                <label for="password">Password</label>
+                <input type="password" placeholder="Password" required id="password">
+                <button type="submit">Sign Up</button>
+            </form>
+
+         
+         <p class="line">Or sign Up with</p>
+
+        <div class="social-login">
+            <button class="facebook">Facebook</button>
+            <button class="google">Google</button>
+        </div>
+
+
+
+        <p class="another">
+            Already have an account? <a href="signin.html">Sign IN</a>
+        </p>
+        <p class="start">after creating an account,Now You One of Our story </p>
+
+        </div>
+    </div>
+
+<script>
+document.getElementById("signupForm").addEventListener("submit", function(e){
+  e.preventDefault();
+
+  let name = document.getElementById("name").value.trim();
+  let email = document.getElementById("email").value.trim();
+  let password = document.getElementById("password").value.trim();
+
+  
+  localStorage.setItem("name", name);
+  localStorage.setItem("email", email);
+  localStorage.setItem("password", password);
+
+  alert("Account created successfully!");
+
+  
+  window.location.href = "signin.html";
+});
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>

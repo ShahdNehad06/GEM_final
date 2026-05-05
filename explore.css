@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+body{
+    padding: 0;
+    margin:0;
+    min-height: 80vh;
+    font-family:'Playfair Display';
+    background-color: #f8f3e6;
+    background-size: cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    font-size:20px;
+}
+nav{
+    background-color: white;
+    display:flex;
+    justify-content: space-between;
+    position: sticky;
+    padding: 15px;
+      
+
+}
+
+nav h2{
+  margin: 0;
+  color: #d4af37;
+}
+
+
+nav ul{
+    list-style: none;
+    display:flex;
+    gap:25px;
+    margin: 0 auto;
+    padding: 0;
+}
+nav ul li a{
+    color:#d4af37;
+    text-decoration:none;
+    font-size: 1rem ;
+    font-family: serif;
+}
+
+nav ul li a:hover{
+    color:#8b7500;
+}
+
+nav button{
+    background-color:#d4af37;
+    color:white;
+    border:none;
+    border-radius: 15px;
+
+}
+
+nav button:hover{
+  background-color: #8a7356;
+}
+
+.containers
+{
+    color: #000000;
+   line-height :1.6;
+   padding: 20px;
+   max-height: 90vh;
+   
+   
+
+}
+p{
+    width: 650px;
+}
+b{
+    color:#d4af37
+    
+}
+h1{
+    color:#d4af37;
+    font-family: 'cinzel';
+    line-height:1;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.ankh{
+    font-size:2rem;
+    color:#d4af37;
+}
+.small{
+    font-size: 1rem;
+    letter-spacing: 6px;
+    font-weight: 600;
+
+}
+.cap{
+    display:block;
+    margin-top: -3;
+}
+
+.purpose{
+    color:#d4af37;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    font-family: 'cinzel';
+}
+
+
+ul{
+    margin-top: 0;
+    margin-bottom: 5px;
+    padding-left: 20px;
+
+}
+
+
+.box
+{
+   width:fit-content;
+   border:1px solid #d4af37;
+   padding:15px;
+   margin-top: 10px;
+   border-radius: 10px;
+   background: rgba(212,175,55,0.1);
+   font-family: 'cinzel';
+   
+}
+.box h3{
+    margin:0;
+    color:#d4af37;
+    margin-left :30px;
+    
+}
+.box p{
+    line-height: 1.6;
+    margin:0;
+
+}
+
+
+
+
+body.dark{
+    background:none !important;
+    background-color: #1a1712 !important;
+    color: #ece3d9 !important;
+}
+body.dark .containers{
+    color:#d19320z;
+    font-family: 'cinzel';
+}
+
+body.dark p,
+body.dark li{
+    color:#c4b39a !important;
+}
+
+
+body.dark h1,
+body.dark h3,
+body.dark b,
+body.dark nav ul li a
+{
+    color:#d4af37;
+
+}
+
+
+body.dark nav ul li a:hover{
+    color:#8b7500 !important;
+}
+
+
+
+
+
+body.dark nav button:hover{
+  background-color: #8a7356 !important;
+}
+
+body.dark nav {
+  background: #26211a;
+}
+
+body.dark .info-cards {
+    background-image: url(images/darkmode.png);
+}
+
+
+
+
+
+.info-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px;
+    background: #f8f3e6;
+    background-image: url(images/ChatGPT\ Image\ May\ 1\,\ 2026\,\ 01_44_40\ PM.png);
+    background-size:contain;
+    margin-top: 40px;
+
+
+    
+}
+
+.card {
+    width: 400px;
+    height: 500px;
+    background: #f8f3e6;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px #df8611d6;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.card video {
+    width: 100%;
+    height: 80%;
+    object-fit:fill;
+    border-radius: 10px;
+
+}
+
+.card h3 {
+    margin: 15px;
+    
+}
+
+.card p {
+    width: auto;
+    max-width: 100%;
+    margin: 10px 15px 15px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background-color: #df97111f;
+
+}
+

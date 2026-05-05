@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Grand Egyptian Museum - Booking</title>
+<link rel="stylesheet" href="booking.css">
+
+</head>
+<body>
+  <nav class="navbar">
+  <div class="logo">GEM</div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="explore.html">About Museum</a></li>
+        <li><a href="exhibitions.html">Exhibitions</a></li>
+        <li><a href="visit.html">Visit Us</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="policies.html">Polices</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+  <a href="signin.html" class="btn">Sign In to Continue</a>
+  </nav>
+<div class="header">
+<h1>Museum Tickets</h1>
+<p>Reserve your visit in a few simple steps</p>
+</div>
+<div class="main">
+<div class="image-box">
+<img src="images/option2.jpeg">
+</div>
+<div class="form-box">
+<div class="card">
+<h3>Visit Date</h3>
+<input type="date">
+</div>
+<div class="card">
+<h3>Egyptian Tickets</h3>
+<select>
+<option>Regular (13-59)</option>
+<option>Children (6-12)</option>
+<option>Student</option>
+<option>Senior</option>
+<option>Disabilities</option>
+</select>
+<div class="ticket-counter">
+<button onclick="changeCount('egyptian', -1)">-</button>
+<span id="egyptian-count">0</span>
+<button onclick="changeCount('egyptian', 1)">+</button>
+</div>
+<p class="note">Children under 6: Free entry</p>
+</div>
+<div class="card">
+<h3>Foreign Tickets</h3>
+<select>
+<option>Adult (13+)</option>
+<option>Children (6-12)</option>
+</select>
+<div class="ticket-counter">
+<button onclick="changeCount('foreign', -1)">-</button>
+<span id="foreign-count">0</span>
+<button onclick="changeCount('foreign', 1)">+</button>
+</div>
+<p class="note">Children under 6: Free entry</p>
+</div>
+<button class="book-btn" onclick="confirmBooking()">Book Now</button>
+</div>
+</div>
+<footer>
+  © 2026 Grand Egyptian Museum. All Rights Reserved.
+</footer>
+<script>
+function changeCount(type, value) {
+  let element = document.getElementById(type + "-count");
+  let count = parseInt(element.innerText);
+
+  count += value;
+
+  if (count < 0) count = 0;
+
+  element.innerText = count;
+}
+</script>
+<script>
+function confirmBooking() {
+alert("Your booking has been confirmed!");
+}
+</script>
+
+<script src="dark.js"></script>
+</body>
+</html>

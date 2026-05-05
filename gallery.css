@@ -1,0 +1,150 @@
+
+
+nav{
+  display: flex;
+  padding: 15px;
+  justify-content: space-between;
+  background-color: white;
+  color: #d4af37;
+ }
+
+nav h2{
+  margin: 0;
+  color: #d4af37;
+}
+
+nav ul {
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  display: flex;
+  
+}
+
+nav ul li a{
+    font-family: serif;
+    font-size: 1rem ;
+  text-decoration: none;
+  padding: 10px;
+  color: #d4af37;
+}
+
+nav ul li a:hover{
+  color:#8B7500 ;
+
+}
+
+
+h1{
+  text-align: center;
+  font-family:  serif;
+  color: #d4af37;
+
+}
+
+
+
+
+body{
+  margin: 0;
+  font-family: serif;
+  background-color: #f8f3e6;
+  background-image: url("images/packground.png"); /* حطي صورة بسيطة */
+  background-repeat: repeat;
+  background-size: 70%;
+}
+
+/* Dark Theme */
+body.dark {
+  background-image: url("images/Gemini_Generated_Image_x15taax15taax15t.png");
+  background-color: #1a1712;
+  background-size: 70%;
+}
+
+body.dark nav {
+  background: #26211a;
+}
+
+body.dark h1,
+body.dark nav ul li a {
+  color: #d4af37;
+}
+
+body.dark nav ul li a:hover{
+  color: #8B7500;
+}
+
+body.dark .buttons button{
+  background-color: beige;
+  color: #1a1712;
+}
+
+body.dark .buttons button:hover{
+  background-color: #d4af37;
+}
+/*buttons*/
+.buttons{
+  text-align: center;
+  margin: 20px;
+  margin-top: 40px;
+}
+
+.buttons button{
+  padding: 15px 25px ;
+  margin: 5px;
+  border: none;
+  border-radius: 10px;
+  background-color: #d4af37;
+  color: white;
+}
+/*buttons hover*/
+.buttons button:hover{
+  background-color: #8B7500;
+}
+
+
+.gallery{ 
+  display:flex; 
+  justify-content: center;
+  align-items: center; 
+  flex-wrap: wrap;
+}
+
+.gallery img{ 
+  display: block;
+  width: 350px;
+  height: 450px;
+  border-radius:15px;
+  box-shadow: 3px 5px 5px #dfb211d6;
+  margin: 10px;
+}
+
+.gallery img:hover{
+  transform: scale(1.04);
+  transition: 0.3s;
+  box-shadow: 10px 10px 5px #df861137;
+
+}
+
+
+.gallery.list {
+  display: flex;
+  flex-direction: column; /* يخلي العناصر تحت بعض */
+  align-items: center;   /* يخليهم في النص */
+}
+
+.gallery.list img {
+  width: 600px;   /* تبقى عريضة شوية */
+  height: 550px; /* تحافظ على النسبة */
+  margin: 15px 0;
+}
+
+footer{
+
+  text-align: center;
+  padding: 10px ;
+  color: #d4af37;
+}
+
+
+
