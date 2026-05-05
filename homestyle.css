@@ -172,9 +172,7 @@ footer {
 .dark a:hover {
   color: #8b7500;
 }
-.dark .card{
-  background:#26211a !important;
-}
+
 
 .policies {
   padding: 60px 20px;
@@ -215,4 +213,7 @@ footer {
 .policy-card p {
   color: #d4af37;
   font-family: "Playfair Display", serif;
+}
+.dark .card{
+  background:#26211a !important;
 }
