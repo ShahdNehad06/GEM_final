@@ -172,8 +172,8 @@ footer {
 .dark a:hover {
   color: #8b7500;
 }
-.dark.card{
-  background:#26211a;
+.dark .card{
+  background:#26211a !important;
 }
 
 .policies {
