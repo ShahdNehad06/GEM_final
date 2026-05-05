@@ -1,222 +1,242 @@
 :root {
-  --nav-bg: white;
+    --nav-bg: white;
 }
 
 .dark {
-  --nav-bg: #26211a;
+    --nav-bg: #26211a;;
 }
 nav {
-  background-color: var(--nav-bg);
-  transition: 0.3s;
-  font-family: "playfair Display", sans-serif;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px;
+    background-color: var(--nav-bg);
+    transition: 0.3s;
+    font-family: 'playfair Display', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
 }
 nav ul {
-  display: flex;
-  gap: 20px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  align-items: center;
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
 }
 
 nav ul li {
-  display: inline-block;
+    display: inline-block;
 }
 
 nav ul li a {
-  color: #d4af37;
-  text-decoration: none;
-  font-size: 1rem;
-  font-family: serif;
+    color: #d4af37;
+    text-decoration: none;
 }
-nav ul li a:hover {
-  color: #8b7500;
+.navbar ul li a :hover{
+    color:#8b7500;
 }
 
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-  background: #f8f3e6;
-  color: #111;
+    font-family: 'Poppins', sans-serif;
+    background: #f8f3e6;
+    color: #111;
 }
 
 .logo {
-  color: #d4af37;
-  font-family: "Playfair Display", serif;
+    color: #d4af37;
+    font-family: 'Playfair Display', serif;
 }
 
 .links {
-  display: flex;
-  list-style: none;
-  gap: 15px;
+    display: flex;
+    list-style: none;
+    gap: 15px;
 }
 
 .links a {
-  color: #d4af37;
-  text-decoration: none;
+    color: #d4af37;
+    text-decoration: none;
 }
 
-.theme-btn {
-  font-family: "playfair Display", sans-serif;
 
-  background: #d4af37;
-  color: #000;
-  border: none;
-  padding: 8px 14px;
-  border-radius: 5px;
-  cursor: pointer;
+.btn {
+    font-family: 'playfair Display', sans-serif;
+
+    background: #d4af37;
+    color: #000;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 p {
-  font-family: "playfair Display", sans-serif;
-  color: #d4af37;
-  line-height: 1.6;
-  font-size: 15px;
+    font-family: 'playfair Display', sans-serif;
+    color: #d4af37;
+    line-height: 1.6;
+    font-size: 15px;
 }
 
+
+
 .hero {
-  height: 90vh;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+    height: 90vh;
+    background: url("../images/museum.jpg") center/cover no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: #f8f3e6;
-}
-
-.dark .hero::before {
-  background: #1a1712;
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
 }
 
 .hero-content {
-  position: relative;
-  color: #fff;
+    position: relative;
+    color: #fff;
 }
 .hero-content p {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .hero-content .btn {
-  display: inline-block;
-  margin-top: 10px;
+    display: inline-block;
+    margin-top: 10px;
 }
 
-h1 {
-  color: #d4af37;
-  font-size: 45px;
-  font-family: "Playfair Display", serif;
+
+ h1 {
+    color: #d4af37;
+    font-size: 45px;
+    font-family: 'Playfair Display', serif;
 }
 h2 {
-  font-family: "playfair Display", sans-serif;
-  color: #d4af37;
-  letter-spacing: 1px;
+    font-family: 'playfair Display', sans-serif;
+    color: #d4af37;
+    letter-spacing: 1px;
+}
+
+.search {
+    text-align: center;
+    padding: 40px;
+}
+
+.search input {
+    padding: 10px;
+    width: 220px;
+}
+.search button {
+    background: #d4af37;
+    color: #111;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.search button:hover {
+    background: #c9a227;
+    transform: scale(1.05);
 }
 
 .highlights {
-  text-align: center;
-  padding: 40px;
+    text-align: center;
+    padding: 40px;
 }
 
 .cards {
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
 }
 
 .card {
-  width: 120px;
-  border-radius: 10px;
-  overflow: hidden;
-  border: 2px solid #d4af37;
+    width: 120px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid #d4af37;
 }
 .card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .card.tall {
-  height: 180px;
+    height: 180px;
 }
-
 
 .card.small {
-  height: 120px;
+    height: 120px;
 }
 footer {
-  background-color: var(--footer-bg);
-  color: #d4af37;
-  text-align: center;
-  padding: 20px;
-  margin-top: 40px;
-  border-top: 2px solid #d4af37;
+    background-color: var(--footer-bg);
+    color: #d4af37;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 2px solid #d4af37;
 }
 .dark {
-  background: #1a1712;
-  color: #fff;
+    background: #1a1712;
+    color: #fff;
+    hover links:8b7500;
 }
-.dark a:hover {
-  color: #8b7500;
-}
-
 
 .policies {
-  padding: 60px 20px;
-  text-align: center;
+    padding: 60px 20px;
+    text-align: center;
 
-  position: relative;
+    background: url("../images/policies.jpg") center/cover no-repeat;
+    position: relative;
 }
 
 .policies::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 0;
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 0;
 }
 
 .policies-grid,
 .policies h1 {
-  position: relative;
-  z-index: 1;
+    position: relative;
+    z-index: 1;
 }
 
 .policy-card {
-  background-color: #1a1712;  
-  color: #fff;     
-  border: 1px solid #333;
-  padding: 20px;
-  border-radius: 12px;
+    background: rgba(0,0,0,0.3);
+    border: 1px solid #d4af37;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
 }
-.policy-card.light {
-  background-color: #f8f3e6;
-  color: #111;
-  border: 1px solid #e5e5e5;
-}
-
 
 .policy-card:hover {
-  transform: scale(1.03);
+    transform: scale(1.03);
 }
 
 .policy-card h2 {
-  color: #d4af37;
+    color: #d4af37;
 }
 
 .policy-card p {
-  color: #d4af37;
-  font-family: "Playfair Display", serif;
+    color: #d4af37;
+    font-family: 'Playfair Display', serif;
 }
+
+
+
