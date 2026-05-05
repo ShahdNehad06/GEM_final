@@ -198,8 +198,6 @@ footer {
 .policies {
     padding: 60px 20px;
     text-align: center;
-
-    background: url("../images/policies.jpg.jpeg") center/cover no-repeat;
     position: relative;
 }
 
@@ -235,6 +233,16 @@ footer {
 
 .policy-card p {
     color: #d4af37;
+
+body.dark .policy-card {
+    background: rgba(20, 20, 20, 0.85);
+    border: 1px solid #d4af37;
+}
+
+body.dark .policy-card h2,
+body.dark .policy-card p {
+    color: #d4af37;
+}
     font-family: 'Playfair Display', serif;
 }
 
