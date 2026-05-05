@@ -176,7 +176,6 @@ footer {
   padding: 60px 20px;
   text-align: center;
 
-  background: url("images/policies.jpg.jpeg") center/cover no-repeat;
   position: relative;
 }
 
@@ -184,7 +183,6 @@ footer {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.6);
   z-index: 0;
 }
 
@@ -195,7 +193,7 @@ footer {
 }
 
 .policy-card {
-  background: rgba(0, 0, 0, 0.3);
+  background: white;
   border: 1px solid #d4af37;
   padding: 20px;
   border-radius: 10px;
