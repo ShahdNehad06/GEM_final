@@ -214,6 +214,6 @@ footer {
   color: #d4af37;
   font-family: "Playfair Display", serif;
 }
-.dark .card{
+body.dark.policy-card{
   background:#26211a !important;
 }
