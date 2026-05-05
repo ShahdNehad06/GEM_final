@@ -195,12 +195,18 @@ footer {
 }
 
 .policy-card {
-  background: white;
-  border: 1px solid #d4af37;
+  background-color: #1a1712;  
+  color: #fff;     
+  border: 1px solid #333;
   padding: 20px;
-  border-radius: 10px;
-  transition: 0.3s;
+  border-radius: 12px;
 }
+.policy-card.light {
+  background-color: #f8f3e6;
+  color: #111;
+  border: 1px solid #e5e5e5;
+}
+
 
 .policy-card:hover {
   transform: scale(1.03);
@@ -213,7 +219,4 @@ footer {
 .policy-card p {
   color: #d4af37;
   font-family: "Playfair Display", serif;
-}
-body.dark.policy-card{
-  background:#26211a !important;
 }
