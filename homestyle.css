@@ -54,8 +54,9 @@ nav ul li a:hover {
     color: #8b7500;
 }
 
-/* ================= BUTTON ================= */
-.btn {
+/* ================= GENERAL BUTTON ================= */
+
+.theme-btn {
     background: #d4af37;
     color: #000;
     border: none;
@@ -63,6 +64,15 @@ nav ul li a:hover {
     border-radius: 6px;
     cursor: pointer;
     font-family: 'Playfair Display', serif;
+    transition: 0.3s;
+}
+
+/* ================= HOVER ================= */
+.btn:hover,
+.theme-btn:hover {
+    background: #c9a227;
+    transform: scale(1.05);
+}
 }
 
 /* ================= HERO (HOME) ================= */
