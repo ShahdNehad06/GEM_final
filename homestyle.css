@@ -54,27 +54,6 @@ nav ul li a:hover {
     color: #8b7500;
 }
 
-/* ================= GENERAL BUTTON ================= */
-
-.theme-btn {
-    background: #d4af37;
-    color: #000;
-    border: none;
-    padding: 8px 14px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-family: 'Playfair Display', serif;
-    transition: 0.3s;
-}
-
-/* ================= HOVER ================= */
-.btn:hover,
-.theme-btn:hover {
-    background: #c9a227;
-    transform: scale(1.05);
-}
-
-
 /* ================= HERO (HOME) ================= */
 .hero {
     height: 100vh;
@@ -238,4 +217,28 @@ body.dark footer {
 
 footer p {
     color: #d4af37;
+}
+
+/* ================= GOLD BUTTONS ================= */
+.btn,
+.theme-btn,
+a.theme-btn {
+    background: #d4af37 !important;
+    color: #000 !important;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Playfair Display', serif;
+    transition: 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* ================= HOVER ================= */
+.btn:hover,
+.theme-btn:hover,
+a.theme-btn:hover {
+    background: #c9a227 !important;
+    transform: scale(1.05);
 }
