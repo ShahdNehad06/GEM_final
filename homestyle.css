@@ -1,26 +1,19 @@
 
-/* ================= RESET ================= */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-/* ================= BODY ================= */
 body {
     font-family: 'Poppins', sans-serif;
-    background: #f5e9d8; /* بيج (Light) */
+    background: #f5e9d8; 
     color: #111;
     transition: 0.3s;
 }
-
-/* ================= DARK MODE ================= */
 body.dark {
-    background: #1c1a17; /* رمادي غامق */
+    background: #1c1a17;
     color: #fff;
 }
-
-/* ================= NAV ================= */
 nav {
     background: #ffffff;
     display: flex;
@@ -30,7 +23,7 @@ nav {
 }
 
 body.dark nav {
-    background: #3b2f23; /* بني */
+    background: #3b2f23; 
 }
 
 nav h2 {
@@ -53,8 +46,6 @@ nav ul li a {
 nav ul li a:hover {
     color: #8b7500;
 }
-
-/* ================= HERO (HOME) ================= */
 .hero {
     height: 100vh;
     background: url("images/museum.jpg.jpeg") center/cover no-repeat;
@@ -91,13 +82,10 @@ nav ul li a:hover {
 .hero p {
     color: #fff;
 }
-
-/* ================= HIGHLIGHTS (HOME) ================= */
 .highlights {
     text-align: center;
     padding: 50px 20px;
 }
-/* ================= HIGHLIGHTS (FIXED GRID) ================= */
 .cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -129,8 +117,6 @@ nav ul li a:hover {
 .card.small {
     height: 140px;
 }
-
-/* ================= RESPONSIVE ================= */
 @media (max-width: 900px) {
     .cards {
         grid-template-columns: repeat(2, 1fr);
@@ -143,7 +129,6 @@ nav ul li a:hover {
     }
 }}
 
-/* ================= ABOUT (HOME) ================= */
 .about {
     text-align: center;
     padding: 50px 20px;
@@ -158,8 +143,6 @@ nav ul li a:hover {
     color: #d4af37;
     font-family: 'Playfair Display', serif;
 }
-
-/* ================= POLICIES ================= */
 .hero-small {
     text-align: center;
     padding: 60px 20px;
@@ -206,8 +189,6 @@ body.dark .policy-card {
     color: #d4af37;
     font-family: 'Playfair Display', serif;
 }
-
-/* ================= FOOTER ================= */
 footer {
     text-align: center;
     padding: 20px;
