@@ -219,13 +219,14 @@ footer p {
     color: #d4af37;
 }
 
-/* ================= GOLD BUTTONS ================= */
+
+/* ================= BUTTON GOLD FRAME ================= */
 .btn,
 .theme-btn,
 a.theme-btn {
-    background: #d4af37 !important;
-    color: #000 !important;
-    border: none;
+    background: transparent;   /* الخلفية مش جولد */
+    color: #d4af37;
+    border: 2px solid #d4af37; /* الفريم جولد */
     padding: 8px 14px;
     border-radius: 6px;
     cursor: pointer;
@@ -239,6 +240,7 @@ a.theme-btn {
 .btn:hover,
 .theme-btn:hover,
 a.theme-btn:hover {
-    background: #c9a227 !important;
+    background: #d4af37;  /* يتحول لجولد عند الهوفر */
+    color: #000;
     transform: scale(1.05);
 }
