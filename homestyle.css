@@ -77,6 +77,11 @@ nav ul li a:hover {
     z-index: 1;
 }
 
+.hero-content a {
+    display: inline-block;
+    margin-top: 15px;
+}
+
 .hero h1 {
     font-family: 'Playfair Display', serif;
     color: #d4af37;
