@@ -1,25 +1,18 @@
-/* ================= RESET ================= */
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
-
-/* ================= BODY ================= */
 body{
     font-family:'Poppins', sans-serif;
     background:#f5e9d8;
     color:#111;
     transition:0.3s;
 }
-
-/* ================= DARK MODE ================= */
 body.dark{
     background:#1c1a17;
     color:#fff;
 }
-
-/* ================= NAVIGATION ================= */
 nav{
     background:#ffffff;
     display:flex;
@@ -27,13 +20,9 @@ nav{
     justify-content:space-between;
     padding:18px 40px;
 }
-
-/* NAV DARK */
 body.dark nav{
     background:#3b2f23;
 }
-
-/* GEM */
 nav h2{
     color:#d4af37;
 
@@ -43,304 +32,177 @@ nav h2{
 
     letter-spacing:2px;
 }
-
-/* LINKS */
 nav ul{
     display:flex;
     gap:20px;
     list-style:none;
-    margin-left:90px; /* تبعد اللينكات عن GEM */
+    margin-left:90px; 
 }
-
-/* LINK STYLE */
 nav ul li a{
     text-decoration:none;
-
     color:#d4af37;
-
     font-family:'Playfair Display', serif;
-
     font-size:14px;
-
     transition:0.3s;
 }
-
-/* HOVER */
 nav ul li a:hover{
     color:#8b7500;
 }
-
-/* ================= BUTTON ================= */
 .theme-btn,
 .btn{
     margin-left:auto;
-
     background:#d4af37;
-
     color:#000;
-
     border:none;
-
     padding:10px 16px;
-
     border-radius:6px;
-
     cursor:pointer;
-
     font-family:'Playfair Display', serif;
-
     transition:0.3s;
 }
-
-/* BUTTON HOVER */
 .theme-btn:hover,
 .btn:hover{
     background:#c9a227;
 
     transform:scale(1.05);
 }
-
-/* ================= HERO ================= */
 .hero{
     height:100vh;
-
     background:url("images/museum.jpg.jpeg") center/cover no-repeat;
-
     position:relative;
-
     display:flex;
     justify-content:center;
     align-items:center;
-
     text-align:center;
 }
-
-/* OVERLAY */
 .hero::before{
     content:"";
-
     position:absolute;
-
     inset:0;
-
     background:rgba(0,0,0,0.5);
 }
-
-/* HERO CONTENT */
 .hero-content{
     position:relative;
-
     z-index:1;
 }
-
-/* TITLE */
 .hero h1{
     color:#d4af37;
-
     font-size:50px;
-
     font-family:'Playfair Display', serif;
-
     margin-bottom:15px;
 }
-
-/* TEXT */
 .hero p{
     color:#fff;
-
     margin-bottom:20px;
-
     font-size:18px;
 }
-
-/* BOOK NOW */
 .hero-content a{
     display:inline-block;
-
     text-decoration:none;
 }
-
-/* ================= HIGHLIGHTS ================= */
 .highlights{
     text-align:center;
-
     padding:60px 20px;
 }
-
-/* TITLE */
 .highlights h2{
     color:#d4af37;
-
     font-family:'Playfair Display', serif;
-
     margin-bottom:30px;
 }
-
-/* GRID */
 .cards{
     display:grid;
-
     grid-template-columns:repeat(4,1fr);
-
     gap:14px;
-
     padding:0 20px;
 }
-
-/* CARD */
 .card{
     border:2px solid #d4af37;
-
     border-radius:12px;
-
     overflow:hidden;
 }
-
-/* IMAGE */
 .card img{
     width:100%;
     height:100%;
-
     object-fit:cover;
 }
-
-/* BIG */
 .card.tall{
     height:240px;
 }
-
-/* SMALL */
 .card.small{
     height:150px;
 }
-
-/* ================= ABOUT ================= */
 .about{
     text-align:center;
-
     padding:60px 20px;
 }
-
-/* TITLE */
 .about h2{
     color:#d4af37;
-
     font-family:'Playfair Display', serif;
-
     margin-bottom:15px;
 }
-
-/* TEXT */
 .about p{
     color:#d4af37;
-
     font-family:'Playfair Display', serif;
-
     line-height:1.8;
-
     max-width:700px;
-
     margin:auto;
 }
-
-/* ================= HERO SMALL ================= */
 .hero-small{
     text-align:center;
-
     padding:60px 20px;
 }
-
-/* TITLE */
 .hero-small h1{
     color:#d4af37;
-
     font-family:'Playfair Display', serif;
-
     margin-bottom:10px;
 }
-
-/* TEXT */
 .hero-small p{
     color:#d4af37;
-
     font-family:'Playfair Display', serif;
 }
-
-/* ================= POLICIES ================= */
 .policies{
     padding:40px;
-
     display:grid;
-
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-
     gap:20px;
 }
-
-/* CARD */
 .policy-card{
     background:#ffffff;
-
     border:1px solid #d4af37;
-
     border-radius:12px;
-
     padding:25px;
-
     transition:0.3s;
 }
-
-/* HOVER */
 .policy-card:hover{
     transform:translateY(-5px);
 }
-
-/* DARK CARD */
 body.dark .policy-card{
     background:#2a2622;
 }
-
-/* TITLE */
 .policy-card h2{
     color:#d4af37;
-
     font-family:'Playfair Display', serif;
 
     margin-bottom:10px;
 }
-
-/* TEXT */
 .policy-card p{
     color:#d4af37;
-
     font-family:'Playfair Display', serif;
-
     line-height:1.8;
 }
-
-
-
-/* ================= FOOTER ================= */
 footer{
     background:#f5e9d8; /* light */
     border-top:2px solid #d4af37;
-
     padding:30px 20px;
     margin-top:50px;
-
     text-align:center;
-
     font-family:'Playfair Display', serif;
     color:#d4af37;
 }
-
-/* DARK MODE */
 body.dark footer{
     background:#1c1a17;
     color:#d4af37;
 }
-
-/* كل النص داخل الفوتر */
 footer p,
 footer h1,
 footer h2,
@@ -348,40 +210,4 @@ footer h3,
 footer span{
     font-family:'Playfair Display', serif;
     color:#d4af37;
-}
-/* ================= RESPONSIVE ================= */
-@media(max-width:900px){
-
-    nav{
-        flex-direction:column;
-
-        gap:20px;
-    }
-
-    nav ul{
-        margin-left:0;
-
-        flex-wrap:wrap;
-
-        justify-content:center;
-    }
-
-    .theme-btn{
-        margin-left:0;
-    }
-
-    .cards{
-        grid-template-columns:repeat(2,1fr);
-    }
-}
-
-@media(max-width:500px){
-
-    .cards{
-        grid-template-columns:1fr;
-    }
-
-    .hero h1{
-        font-size:35px;
-    }
 }
