@@ -1,229 +1,355 @@
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* ================= RESET ================= */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
-body {
-    font-family: 'Poppins', sans-serif;
-    background: #f5e9d8; 
-    color: #111;
-    transition: 0.3s;
+
+/* ================= BODY ================= */
+body{
+    font-family:'Poppins', sans-serif;
+    background:#f5e9d8;   /* light beige */
+    color:#111;
+    transition:0.3s;
 }
-body.dark {
-    background: #1c1a17;
-    color: #fff;
+
+/* ================= DARK MODE ================= */
+body.dark{
+    background:#1c1a17;   /* dark gray */
+    color:#fff;
 }
+
+/* ================= NAVIGATION ================= */
 nav{
-  display: flex;
-  padding: 15px;
-  justify-content: space-between;
-  background-color: white;
-  color: #d4af37;
- }
+    background:#ffffff;
+    padding:18px 40px;
 
+    display:flex;
+    align-items:center;
+
+    transition:0.3s;
+}
+
+/* NAV DARK */
+body.dark nav{
+    background:#3b2f23;
+}
+
+/* GEM LOGO */
 nav h2{
-  margin: 0;
-  color: #d4af37;
+    color:#d4af37;
+    font-family:'Playfair Display', serif;
+    font-size:32px;
+    letter-spacing:1px;
 }
 
-nav ul {
-  list-style: none;
-  padding: 10px;
-  margin: 0;
-  display: flex;
-  
+/* LINKS CONTAINER */
+nav ul{
+    display:flex;
+    gap:18px;
+
+    list-style:none;
+
+    margin-left:60px; /* تبعد اللينكات عن GEM */
 }
 
+/* LINKS */
 nav ul li a{
-    font-family: serif;
-    font-size: 1rem ;
-  text-decoration: none;
-  padding: 10px;
-  color: #d4af37;
+    text-decoration:none;
+    color:#d4af37;
+
+    font-family:'Playfair Display', serif;
+    font-size:14px; /* خط صغير */
+
+    transition:0.3s;
 }
 
 nav ul li a:hover{
-  color:#8B7500 ;
-
-body.dark nav {
-    background: #3b2f23;
-}
-.theme-btn {
-    margin-left: auto;
-}
-.hero {
-    height: 100vh;
-    background: url("images/museum.jpg.jpeg") center/cover no-repeat;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    color:#8b7500;
 }
 
-.hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0.5);
+/* ================= BUTTON ================= */
+.theme-btn,
+.btn{
+    margin-left:auto;
+
+    background:#d4af37;
+    color:#000;
+
+    border:none;
+
+    padding:9px 16px;
+
+    border-radius:6px;
+
+    cursor:pointer;
+
+    font-family:'Playfair Display', serif;
+
+    transition:0.3s;
 }
 
-.hero-content {
-    position: relative;
-    z-index: 1;
+.theme-btn:hover,
+.btn:hover{
+    background:#c9a227;
+    transform:scale(1.05);
 }
 
-.hero-content a {
-    display: inline-block;
-    margin-top: 15px;
+/* ================= HERO ================= */
+.hero{
+    height:100vh;
+
+    background:url("images/museum.jpg.jpeg") center/cover no-repeat;
+
+    position:relative;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
 }
 
-.hero h1 {
-    font-family: 'Playfair Display', serif;
-    color: #d4af37;
-    font-size: 45px;
+/* OVERLAY */
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+
+    background:rgba(0,0,0,0.5);
 }
 
-.hero p {
-    color: #fff;
-}
-.highlights {
-    text-align: center;
-    padding: 50px 20px;
-}
-.cards {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 12px;
-    align-items: stretch;
-    padding: 0 20px;
+/* CONTENT */
+.hero-content{
+    position:relative;
+    z-index:1;
 }
 
-/* CARD BASE */
-.card {
-    border: 2px solid #d4af37;
-    border-radius: 10px;
-    overflow: hidden;
+/* TITLE */
+.hero h1{
+    color:#d4af37;
+
+    font-family:'Playfair Display', serif;
+
+    font-size:50px;
+
+    margin-bottom:15px;
 }
 
-/* IMAGE */
-.card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+/* PARAGRAPH */
+.hero p{
+    color:#fff;
+
+    margin-bottom:20px;
+
+    font-size:18px;
 }
 
-/* BIG CARD */
-.card.tall {
-    height: 220px;
+/* BOOK BUTTON */
+.hero-content a{
+    display:inline-block;
+    text-decoration:none;
 }
 
-/* SMALL CARD */
-.card.small {
-    height: 140px;
-}
-@media (max-width: 900px) {
-    .cards {
-        grid-template-columns: repeat(2, 1fr);
-    }
+/* ================= HIGHLIGHTS ================= */
+.highlights{
+    text-align:center;
+    padding:60px 20px;
 }
 
-@media (max-width: 500px) {
-    .cards {
-        grid-template-columns: 1fr;
-    }
-}}
+.highlights h2{
+    color:#d4af37;
+    font-family:'Playfair Display', serif;
 
-.about {
-    text-align: center;
-    padding: 50px 20px;
+    margin-bottom:25px;
 }
 
-.about h2 {
-    color: #d4af37;
-    font-family: 'Playfair Display', serif;
-}
+/* GRID */
+.cards{
+    display:grid;
 
-.about p {
-    color: #d4af37;
-    font-family: 'Playfair Display', serif;
-}
-.hero-small {
-    text-align: center;
-    padding: 60px 20px;
-}
+    grid-template-columns:repeat(4,1fr);
 
-.hero-small h1 {
-    font-family: 'Playfair Display', serif;
-    color: #d4af37;
-}
+    gap:14px;
 
-.hero-small p {
-    color: #d4af37;
-}
-
-/* GRID CARDS */
-.policies {
-    padding: 40px 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    padding:0 20px;
 }
 
 /* CARD */
-.policy-card {
-    background: #ffffff;
-    border: 1px solid #d4af37;
-    padding: 20px;
-    border-radius: 10px;
-    transition: 0.3s;
+.card{
+    border:2px solid #d4af37;
+
+    border-radius:12px;
+
+    overflow:hidden;
 }
 
-/* DARK MODE CARD */
-body.dark .policy-card {
-    background: #2a2622;
+/* IMAGE */
+.card img{
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+}
+
+/* SIZES */
+.card.tall{
+    height:240px;
+}
+
+.card.small{
+    height:150px;
+}
+
+/* ================= ABOUT ================= */
+.about{
+    text-align:center;
+
+    padding:60px 20px;
+}
+
+.about h2{
+    color:#d4af37;
+
+    font-family:'Playfair Display', serif;
+
+    margin-bottom:15px;
+}
+
+.about p{
+    color:#d4af37;
+
+    font-family:'Playfair Display', serif;
+
+    max-width:700px;
+
+    margin:auto;
+
+    line-height:1.8;
+}
+
+/* ================= POLICIES ================= */
+.hero-small{
+    text-align:center;
+    padding:60px 20px;
+}
+
+.hero-small h1{
+    color:#d4af37;
+    font-family:'Playfair Display', serif;
+    margin-bottom:10px;
+}
+
+.hero-small p{
+    color:#d4af37;
+}
+
+/* POLICY GRID */
+.policies{
+    padding:40px;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:20px;
+}
+
+/* CARD */
+.policy-card{
+    background:#ffffff;
+
+    border:1px solid #d4af37;
+
+    border-radius:12px;
+
+    padding:25px;
+
+    transition:0.3s;
+}
+
+/* HOVER */
+.policy-card:hover{
+    transform:translateY(-5px);
+}
+
+/* DARK CARD */
+body.dark .policy-card{
+    background:#2a2622;
 }
 
 /* TEXT */
-.policy-card h2 {
-    color: #d4af37;
-    font-family: 'Playfair Display', serif;
+.policy-card h2{
+    color:#d4af37;
+
+    font-family:'Playfair Display', serif;
+
+    margin-bottom:10px;
 }
 
-.policy-card p {
-    color: #d4af37;
-    font-family: 'Playfair Display', serif;
-}
-footer {
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-    border-top: 2px solid #d4af37;
-    background: #ffffff;
+.policy-card p{
+    color:#d4af37;
+
+    font-family:'Playfair Display', serif;
+
+    line-height:1.7;
 }
 
-body.dark footer {
-    background: #3b2f23;
+/* ================= FOOTER ================= */
+footer{
+    text-align:center;
+
+    padding:25px;
+
+    margin-top:40px;
+
+    border-top:2px solid #d4af37;
+
+    background:#f5e9d8; /* نفس لون البودي */
 }
 
-footer p {
-    color: #d4af37;
+/* DARK FOOTER */
+body.dark footer{
+    background:#1c1a17; /* نفس لون البودي */
 }
 
-.theme-btn {
-    background: #d4af37 !important;  /* جولد */
-    color: #000 !important;
-    border: none !important;
-    padding: 8px 14px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-family: 'Playfair Display', serif;
-    transition: 0.3s;
+footer p{
+    color:#d4af37;
+
+    font-family:'Playfair Display', serif;
 }
 
-/* hover */
-.theme-btn:hover {
-    background: #c9a227 !important;
-    transform: scale(1.05);
+/* ================= RESPONSIVE ================= */
+@media(max-width:900px){
+
+    nav{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    nav ul{
+        margin-left:0;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .theme-btn{
+        margin-left:0;
+    }
+
+    .cards{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:500px){
+
+    .cards{
+        grid-template-columns:1fr;
+    }
+
+    .hero h1{
+        font-size:35px;
+    }
 }
