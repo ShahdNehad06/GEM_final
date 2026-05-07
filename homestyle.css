@@ -14,42 +14,43 @@ body.dark {
     background: #1c1a17;
     color: #fff;
 }
+nav{
+  display: flex;
+  padding: 15px;
+  justify-content: space-between;
+  background-color: white;
+  color: #d4af37;
+ }
 
-nav {
-    background: #ffffff;
-    display: flex;
-    align-items: center;
-    padding: 15px 25px;
-    gap: 40px; 
+nav h2{
+  margin: 0;
+  color: #d4af37;
 }
+
+nav ul {
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  display: flex;
+  
+}
+
+nav ul li a{
+    font-family: serif;
+    font-size: 1rem ;
+  text-decoration: none;
+  padding: 10px;
+  color: #d4af37;
+}
+
+nav ul li a:hover{
+  color:#8B7500 ;
 
 body.dark nav {
     background: #3b2f23;
 }
-
-nav h2 {
-    font-family: 'Playfair Display', serif;
-    color: #d4af37;
-}
-nav ul {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-
-    margin-left: 40px;
-}
 .theme-btn {
     margin-left: auto;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #d4af37;
-    font-family: 'Playfair Display', serif;
-}
-
-nav ul li a:hover {
-    color: #8b7500;
 }
 .hero {
     height: 100vh;
