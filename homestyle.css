@@ -14,27 +14,32 @@ body.dark {
     background: #1c1a17;
     color: #fff;
 }
+
 nav {
     background: #ffffff;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 15px 25px;
+    gap: 40px; 
 }
 
 body.dark nav {
-    background: #3b2f23; 
+    background: #3b2f23;
 }
 
 nav h2 {
     font-family: 'Playfair Display', serif;
     color: #d4af37;
 }
-
 nav ul {
     display: flex;
-    gap: 15px;
+    gap: 20px;
     list-style: none;
+
+    margin-left: 40px;
+}
+.theme-btn {
+    margin-left: auto;
 }
 
 nav ul li a {
