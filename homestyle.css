@@ -25,11 +25,8 @@ body.dark nav{
 }
 nav h2{
     color:#d4af37;
-
     font-family:'Playfair Display', serif;
-
     font-size:32px;
-
     letter-spacing:2px;
 }
 nav ul{
@@ -63,7 +60,6 @@ nav ul li a:hover{
 .theme-btn:hover,
 .btn:hover{
     background:#c9a227;
-
     transform:scale(1.05);
 }
 .hero{
@@ -182,7 +178,6 @@ body.dark .policy-card{
 .policy-card h2{
     color:#d4af37;
     font-family:'Playfair Display', serif;
-
     margin-bottom:10px;
 }
 .policy-card p{
@@ -191,7 +186,7 @@ body.dark .policy-card{
     line-height:1.8;
 }
 footer{
-    background:#f5e9d8; /* light */
+    background:#f5e9d8; 
     border-top:2px solid #d4af37;
     padding:30px 20px;
     margin-top:50px;
