@@ -295,29 +295,66 @@ body.dark .policy-card{
 
     line-height:1.7;
 }
-
 /* ================= FOOTER ================= */
 footer{
-    text-align:center;
-
-    padding:25px;
-
-    margin-top:40px;
-
+    background:#f5e9d8;
     border-top:2px solid #d4af37;
-
-    background:#f5e9d8; /* نفس لون البودي */
+    padding:40px 20px 20px;
+    margin-top:40px;
 }
 
-/* DARK FOOTER */
+/* DARK MODE */
 body.dark footer{
-    background:#1c1a17; /* نفس لون البودي */
+    background:#1c1a17;
 }
 
-footer p{
+/* CONTAINER */
+.footer-container{
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:30px;
+
+    margin-bottom:30px;
+}
+
+/* SECTION */
+.footer-section h3{
     color:#d4af37;
 
     font-family:'Playfair Display', serif;
+
+    margin-bottom:15px;
+}
+
+.footer-section p,
+.footer-section a{
+    color:#d4af37;
+
+    text-decoration:none;
+
+    font-family:'Playfair Display', serif;
+
+    line-height:1.8;
+}
+
+/* LINKS */
+.footer-section ul{
+    list-style:none;
+}
+
+.footer-section a:hover{
+    color:#8b7500;
+}
+
+/* BOTTOM */
+.footer-bottom{
+    text-align:center;
+
+    border-top:1px solid #d4af37;
+
+    padding-top:15px;
 }
 
 /* ================= RESPONSIVE ================= */
