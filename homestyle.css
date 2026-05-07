@@ -48,7 +48,8 @@ nav ul li a:hover{
 
 body.dark nav {
     background: #3b2f23;
-}body.dark nav ul li a {
+}
+    body.dark nav ul li a {
   color: #d4af37;
 }
 
