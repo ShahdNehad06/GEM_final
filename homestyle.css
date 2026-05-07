@@ -325,12 +325,17 @@ body.dark .policy-card{
 }
 
 
+
+/* ================= FOOTER ================= */
 footer{
-    background:#f5e9d8;
+    background:#f5e9d8; /* light */
     border-top:2px solid #d4af37;
-    padding:40px 20px;
+
+    padding:30px 20px;
     margin-top:50px;
+
     text-align:center;
+
     font-family:'Playfair Display', serif;
     color:#d4af37;
 }
@@ -338,21 +343,17 @@ footer{
 /* DARK MODE */
 body.dark footer{
     background:#1c1a17;
+    color:#d4af37;
 }
 
-/* LAYOUT */
-.footer-icons{
-    display:flex;
-    justify-content:center;
-    gap:25px;
-    margin:20px 0;
-}
-
-.footer-line{
-    width:150px;
-    height:2px;
-    background:#d4af37;
-    margin:15px auto;
+/* كل النص داخل الفوتر */
+footer p,
+footer h1,
+footer h2,
+footer h3,
+footer span{
+    font-family:'Playfair Display', serif;
+    color:#d4af37;
 }
 /* ================= RESPONSIVE ================= */
 @media(max-width:900px){
