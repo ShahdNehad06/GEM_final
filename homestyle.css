@@ -49,21 +49,6 @@ nav ul li a:hover{
 body.dark nav {
     background: #3b2f23;
 }
-    body.dark nav ul li a {
-  color: #d4af37;
-}
-
-body.dark nav ul li a:hover {
-  color: #8b7500 !important;
-}
-
-body.dark nav button:hover {
-  background-color: #8a7356 !important;
-}
-
-body.dark nav {
-  background: #26211a;
-}
 .theme-btn {
     margin-left: auto;
 }
