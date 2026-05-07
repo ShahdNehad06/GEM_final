@@ -295,12 +295,18 @@ body.dark .policy-card{
 
     line-height:1.7;
 }
+
 /* ================= FOOTER ================= */
 footer{
     background:#f5e9d8;
+
     border-top:2px solid #d4af37;
-    padding:40px 20px 20px;
-    margin-top:40px;
+
+    margin-top:50px;
+
+    padding:50px 20px 20px;
+
+    text-align:center;
 }
 
 /* DARK MODE */
@@ -308,53 +314,64 @@ body.dark footer{
     background:#1c1a17;
 }
 
-/* CONTAINER */
-.footer-container{
-    display:grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-
-    gap:30px;
-
-    margin-bottom:30px;
-}
-
-/* SECTION */
-.footer-section h3{
+/* CONTENT */
+.footer-content h2{
     color:#d4af37;
 
     font-family:'Playfair Display', serif;
+
+    font-size:32px;
 
     margin-bottom:15px;
 }
 
-.footer-section p,
-.footer-section a{
+/* QUOTE */
+.footer-text{
     color:#d4af37;
-
-    text-decoration:none;
 
     font-family:'Playfair Display', serif;
 
-    line-height:1.8;
+    font-size:18px;
+
+    margin-bottom:25px;
 }
 
-/* LINKS */
-.footer-section ul{
-    list-style:none;
+/* SOCIALS */
+.socials{
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    margin-bottom:30px;
 }
 
-.footer-section a:hover{
+.socials span{
+    color:#d4af37;
+
+    font-family:'Playfair Display', serif;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.socials span:hover{
     color:#8b7500;
 }
 
 /* BOTTOM */
 .footer-bottom{
-    text-align:center;
-
     border-top:1px solid #d4af37;
 
     padding-top:15px;
+}
+
+.footer-bottom p{
+    color:#d4af37;
+
+    font-family:'Playfair Display', serif;
 }
 
 /* ================= RESPONSIVE ================= */
