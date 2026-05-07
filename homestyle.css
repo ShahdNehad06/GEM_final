@@ -22,13 +22,10 @@ body.dark{
 /* ================= NAVIGATION ================= */
 nav{
     background:#ffffff;
-
     display:flex;
     align-items:center;
-
+    justify-content:space-between;
     padding:18px 40px;
-
-    transition:0.3s;
 }
 
 /* NAV DARK */
@@ -50,11 +47,8 @@ nav h2{
 /* LINKS */
 nav ul{
     display:flex;
-
     gap:20px;
-
     list-style:none;
-
     margin-left:90px; /* تبعد اللينكات عن GEM */
 }
 
