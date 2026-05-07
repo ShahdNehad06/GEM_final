@@ -24,7 +24,6 @@ body.dark{
 nav{
     background:#ffffff;
     padding:18px 40px;
-
     display:flex;
     align-items:center;
 
@@ -33,7 +32,7 @@ nav{
 nav ul {
   list-style: none;
   padding: 10px;
-  margin: 0;
+  margin-lift: 80px;
   display: flex;
 
 /* NAV DARK */
