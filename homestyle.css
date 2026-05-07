@@ -324,93 +324,36 @@ body.dark .policy-card{
     line-height:1.8;
 }
 
-/* ================= FOOTER ================= */
+
 footer{
     background:#f5e9d8;
-
-    padding:50px 20px 25px;
-
-    margin-top:50px;
-
-    text-align:center;
-
     border-top:2px solid #d4af37;
+    padding:40px 20px;
+    margin-top:50px;
+    text-align:center;
+    font-family:'Playfair Display', serif;
+    color:#d4af37;
 }
 
-/* FOOTER DARK */
+/* DARK MODE */
 body.dark footer{
     background:#1c1a17;
 }
 
-/* GEM */
-.footer-center h2{
-    color:#d4af37;
-
-    font-size:40px;
-
-    font-family:'Playfair Display', serif;
-
-    margin-bottom:10px;
-
-    letter-spacing:2px;
-}
-
-/* TEXT */
-.footer-center p{
-    color:#d4af37;
-
-    font-family:'Playfair Display', serif;
-
-    margin-bottom:25px;
-}
-
-/* LINE */
-.footer-line{
-    width:180px;
-
-    height:2px;
-
-    background:#d4af37;
-
-    margin:0 auto 25px;
-}
-
-/* SOCIALS */
+/* LAYOUT */
 .footer-icons{
     display:flex;
-
     justify-content:center;
-
-    gap:30px;
-
-    margin-bottom:30px;
+    gap:25px;
+    margin:20px 0;
 }
 
-/* ICONS */
-.footer-icons span{
-    color:#d4af37;
-
-    font-family:'Playfair Display', serif;
-
-    transition:0.3s;
-
-    cursor:pointer;
+.footer-line{
+    width:150px;
+    height:2px;
+    background:#d4af37;
+    margin:15px auto;
 }
-
-/* HOVER */
-.footer-icons span:hover{
-    color:#8b7500;
-}
-
-/* COPYRIGHT */
-.copyright{
-    color:#d4af37;
-
-    font-size:14px;
-
-    font-family:'Playfair Display', serif;
-}
-
 /* ================= RESPONSIVE ================= */
 @media(max-width:900px){
 
