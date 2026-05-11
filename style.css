@@ -82,7 +82,7 @@ nav {
 
 .nav-links li a {
   text-decoration: none;
-  font-size: 1rem ;
+  font-size: 1rem;
   color: var(--text-primary);
   font-family: serif;
 }
@@ -93,20 +93,50 @@ nav {
   padding-bottom: 5px;
 }
 
-#themeButton {
-  background: #d4af37;
-  border: none;
-  padding: 0.5rem 1.2rem;
-  border-radius: 60px;
+.theme-icon {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  color: #d4af37;
+  text-decoration: none;
+
+  transition: 0.3s;
+  background: transparent;
+  font-size: 1rem;
   cursor: pointer;
-  font-family: inherit;
-  box-shadow: var(--shadow-sm);
-  visibility: hidden;
 }
 
-#themeButton:hover {
-  background: #8b7500;
-  transform: scale(1.02);
+/* hover */
+.theme-icon:hover {
+  background: #dac29a;
+  color: #31291e;
+  transform: scale(1.1);
+}
+.login-icon {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  color: #d4af37;
+  text-decoration: none;
+
+  transition: 0.3s;
+  background: transparent;
+  font-size: 1rem;
+}
+
+/* hover */
+.login-icon:hover {
+  background: #dac29a;
+  color: #31291e;
+  transform: scale(1.1);
 }
 
 .intro {
@@ -259,7 +289,83 @@ nav {
 }
 
 footer {
-  text-align: center;
-  padding: 20px;
-  color: var(--text-primary);
+  font-family: "Playfair Display", serif;
+  background-color: white;
+  border-top: 1px solid #b69b43;
+  padding: 50px 80px;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.icon {
+  max-width: 320px;
+}
+
+.icon p:first-child {
+  font-size: 20px;
+  color: #c9a227;
+  margin-bottom: 15px;
+}
+
+.icon p:last-child {
+  color: #8b7500;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.links {
+  min-width: 200px;
+}
+
+.footer_links {
+  list-style: none;
+}
+
+.footer_links li {
+  margin-bottom: 5px;
+}
+
+.footer_links a {
+  text-decoration: none;
+  color: #8b7500;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.footer_links a:hover {
+  color: #c9b327;
+  padding-left: 5px;
+}
+
+.footer_links h3 {
+  color: #c9a227;
+  margin-bottom: 20px;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.acsses p {
+  color: #c9a227;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.access h3 {
+  color: #c9a227;
+  margin-bottom: 20px;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.access p {
+  margin-bottom: 18px;
+  color: #555;
+  font-size: 15px;
+  color: #8b7500;
+}
+
+body.dark footer {
+  background: #26211a;
+  border-top: 1px solid #3d352b;
 }

@@ -12,7 +12,7 @@ const exhibitionsData = [
         revealing the mystery and grandeur of a forgotten age.
 `,
   },
-
+ 
   {
     id: 2,
     name: "Ramesses II",
@@ -100,7 +100,7 @@ function renderCards() {
             <div class="card-content">
                 <h3 class="artifact-name">${artifact.name}</h3>
                 <button class="read-more-btn" data-id="${artifact.id}">
-                    <i class="fas fa-book-open"></i> Read More
+                Read More
                 </button>
             </div>
         `;

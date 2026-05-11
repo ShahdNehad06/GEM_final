@@ -1,0 +1,175 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ================= BODY ================= */
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f5e9d8; /* light beige */
+  color: #111;
+  transition: 0.3s;
+}
+
+/* ================= DARK MODE ================= */
+body.dark {
+  background: #1c1a17; /* dark gray */
+  color: #fff;
+}
+
+/* ================= NAVIGATION ================= */
+nav {
+  background: #ffffff;
+  border-bottom: 1px solid #b69b43;
+  padding: 15px;
+}
+.nav {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+/* NAV DARK */
+body.dark nav {
+  background: #26211a;
+  border-bottom: 1px solid #3d352b;
+}
+
+/* GEM LOGO */
+.logo {
+  font-family: "Playfair", serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #d4af37;
+  margin-right: auto;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.8rem;
+  margin-right: auto;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #d4af37;
+  font-family: serif;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  color: #8b7500;
+  padding-bottom: 5px;
+}
+
+/* ================= BUTTON ================= */
+.theme-btn {
+  background: #d4af37;
+  color: #26211a;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 60px;
+  cursor: pointer;
+  font-family: inherit;
+  box-shadow:
+    0 10px 20px #0000000d,
+    0 6px 6px #00000005;
+}
+
+.theme-btn:hover {
+  background: #8b7500;
+  transform: scale(1.02);
+}
+.hero-small {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero-small h1 {
+  color: #d4af37;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 10px;
+}
+
+.hero-small p {
+  color: #d4af37;
+}
+
+/* POLICY GRID */
+.policies {
+  padding: 40px;
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+  gap: 20px;
+}
+
+/* CARD */
+.policy-card {
+  background: #ffffff;
+
+  border: 1px solid #d4af37;
+
+  border-radius: 12px;
+
+  padding: 25px;
+
+  transition: 0.3s;
+}
+
+/* HOVER */
+.policy-card:hover {
+  transform: translateY(-5px);
+}
+
+/* DARK CARD */
+body.dark .policy-card {
+  background: #2a2622;
+}
+
+/* TEXT */
+.policy-card h2 {
+  color: #d4af37;
+
+  font-family: "Playfair Display", serif;
+
+  margin-bottom: 10px;
+}
+
+.policy-card p {
+  color: #d4af37;
+
+  font-family: "Playfair Display", serif;
+
+  line-height: 1.7;
+}
+
+/* ================= FOOTER ================= */
+footer {
+  text-align: center;
+
+  padding: 25px;
+
+  margin-top: 40px;
+
+  border-top: 2px solid #d4af37;
+
+  background: #f5e9d8; /* نفس لون البودي */
+}
+
+/* DARK FOOTER */
+body.dark footer {
+  background: #1c1a17; /* نفس لون البودي */
+}
+
+footer p {
+  color: #d4af37;
+
+  font-family: "Playfair Display", serif;
+}
